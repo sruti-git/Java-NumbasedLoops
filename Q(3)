@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int count=0;
+        while(n!=0){
+            count++;
+            n/=10;
+        }
+        System.out.println("Count of digits: "+count);
+    }
+}
+
+/* if the input is 0 then the output will return as 0
+eventhough 0 is also digit it cant wont print 1 if we 
+use the above code alone.So if we want to print as 1 we 
+need to add the below condition
+
+  if(n==0){
+    System.out.print(1);
+    return;
+    
+*/
